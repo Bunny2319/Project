@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RasoiGhar❤️🍴 | Home</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee6d8;
+    font-family: cambria;
+}
+
+header { 
+     background: #eee6d8; 
+     padding: 10px;  
+     font-family: Cambria;
+     height: 400px;
+}
+
+.heade{
+    background: #a84300; 
+    display: flex;                          
+    justify-content: center;       
+    align-items: center;            
+    gap: 900px;     
+    height: 370px                 
+}
+
+.navbar { 
+  display: flex; 
+  background-color:#a84300 ; 
+  color: #eee6d8; 
+  padding: 15px 20px; 
+  justify-content: center;
+  gap: 25px;
+} 
+ 
+.logo { 
+    width: 300px;
+    height: auto;
+    align-items: left;
+}
+
+.actions a { 
+  margin-left: 15px; 
+  color: #eee6d8; 
+  text-decoration: none; 
+  font-weight: bold; 
+  text-align: right;
+  font-size: 30px;
+} 
+
+.nav-links { 
+  display: flex; 
+  list-style: none; 
+} 
+ 
+.nav-links li { 
+  margin: 0 15px; 
+} 
+ 
+.nav-links a { 
+  text-decoration: none; 
+  color: #eee6d8;
+  font-size: 30px; 
+} 
+ 
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 25px;
+    background-color: #ece2d0;
+}
+
+.card { 
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 7px 12px rgba(0,0,0,0.2);
+    border : 2px solid #A84300;
+    border-radius: 10px;
+    width: 50%;              
+    height: 650px;
+}
+
+.card img {
+    width: 100%;
+    height: 500px;
+}
+
+.card a {
+    text-decoration: none;
+    background: #A84300;
+    color: #eee6d8;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.heading {
+    font-size : 30px;
+    color : #7B241C;
+    text-align : left;
+    background-color: #eee6d8;
+    padding : 15px;
+}
+
+.dish-section{
+    max-width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding : 15px;
+    box-shadow: 0px 7px 12px rgba(0,0,0,0.2);
+    border-radius: 14px;
+}
+
+.dish-card{
+    display: flex;
+    gap: 20px;
+    background: #f6efe5;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.dish-card img{
+  width: 100%;
+  height: 350px;
+  object-fit : cover;
+}
+
+.dish-info h2{
+    margin: 0;
+    color: #7B241C;
+    font-size : 36px;
+}
+
+.dish-info p{
+    margin: 6px 0;
+    color: black;
+    font-size: 23px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 6px 12px;
+    background: #a84300;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 32px;
+}
+
+footer {
+    background-color: #a84300;
+    color: #eee6d8;
+    padding: 20px 0;
+    font-family: cambria;
+    font-size: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+.social-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.social-links li{
+  color: #eee6d8;
+  text-decoration: none;
+  margin-right: 15px;
+  display: inline-block;
+  padding: 5px 0;
+  list-style: none;
+}
+
+.back-to-top {
+    margin-left: auto;
+    font-weight: bold;
+    color: #eee6d8;
+    font-size: 25px;
+}
+
+/* ================= TABLET VIEW ================= */
+@media (max-width: 1024px) {
+
+  .heade{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .logo{
+    width: 150px;
+  }
+
+  .nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .container{
+    display: flex;
+    flex : 1;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .card img{
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .dish-card{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dish-card img{
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .footer-container{
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .social-links ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+
+/* ================= MOBILE VIEW ================= */
+@media (max-width: 750px) {
+
+  .heade{
+    flex-direction: column;
+  }
+
+  .actions span{
+    font-size: 22px !important;
+  }
+
+  .nav-links{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .heading h1{
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .dish-info h2{
+    font-size: 20px;
+  }
+
+  .dish-info p{
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .btn{
+    margin-top: 10px;
+    padding: 8px 14px;
+  }
+
+  .footer-info p{
+    font-size: 13px;
+  }
+
+  .social-img{
+    width: 35px;
+  }
+}
+
+</style>
+</head>
+<body>
+<header id="top">
+<div class="heade">
+    <div><img src="image.png" class="logo"></div> 
+    <div class="actions"> 
+      <a href="login.html"><b>Login  |</b></a>
+      <span style="font-size: 30px; color: #eee6d8; font-family: cambria;"><b>🍴❤️MY RECIPES</b></span> 
+    </div>
+</div>
+</header>
+
+<nav class="navbar"> 
+     <ul class="nav-links"> 
+      <li><a href="home.html"><u><b>Home</b></u></a></li> 
+      <li><a href="about.html">About</a></li> 
+      <li><a href="categories.html">Categories</a></li> 
+      <li><a href="upload.html">Upload Own Recipe</a></li> 
+      <li><a href="contact.html">Contact</a></li> 
+    </ul> 
+</nav> 
+<br>
+<div class="container">
+    <div class="card">
+        <img src="https://www.easeindiatrip.com/blog/wp-content/uploads/2025/05/South-India-Famous-Food.jpg" alt="South" >
+    <br><br>
+    <center><a href="#south">SOUTH INDIAN</a></center>
+    </div>
+    <div class="card">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/6e/8c/23/ein-traditionelles-indisches.jpg?w=1400&h=800&s=1" alt="North">
+    <br><br>
+    <center><a href="#north">NORTH INDIAN</a></center>
+    </div>
+</div>
+
+<section class="dish-section">
+<div class="heading" id="south"><h1><b>SOUTH INDIAN</b></h1></div>
+  <div class="dish-card">
+    <img src="https://i0.wp.com/binjalsvegkitchen.com/wp-content/uploads/2015/12/Masala-Dosa-H1-1.jpg?w=600&ssl=1" alt="Masala dosa">
+    <div class="dish-info">
+      <h2>Masala Dosa</h2>
+      <p>Masala dosa is an iconic and widely popular South Indian dish consisting of a savory, 
+       crispy rice and lentil crepe stuffed with a spiced potato and onion filling. It is a 
+       common breakfast item that is enjoyed throughout India and globally, typically served 
+       with sambar and various chutneys. </p>
+      <a href="https://youtu.be/PFG1aeYgi7c?si=Bl8C07F3iFbQQPOr" class="btn">View Recipe</a>
+    </div>
+  </div>
+
+  <div class="dish-card">
+    <img src="https://www.easyfoodsmith.com/wp-content/uploads/2022/03/IMG_0942_2.jpg" alt="Rava uttpam">
+    <div class="dish-info">
+      <h2>Rava Uttpam</h2>
+      <p>Rava uttapam, also known as suji uttapam, is a popular, instant South Indian breakfast
+        item similar to a thick, savory pancake made from a semolina (rava/suji) and yogurt (curd) 
+        batter. Unlike traditional uttapam which requires overnight fermentation of rice and lentil
+        batter, this version is quick to prepare and can be ready in about 30 minutes, including 
+        resting time. </p>
+      <a href="https://youtu.be/BiO1SXyRAs4?si=FuBXIdtKvKY-QqDU" class="btn">View Recipe</a>
+    </div>
+  </div>
+
+  <div class="dish-card">
+    <img src="https://maharajaroyaldining.com/wp-content/uploads/2024/03/Idli-Sambar-3.webp" alt="Idli">
+    <div class="dish-info">
+      <h2>Idli</h2>
+      <p>Idli sambar is a classic and healthy South Indian meal consisting of soft, fluffy steamed
+         rice and lentil cakes (idlis) served with a hearty, flavorful, and protein-packed lentil 
+         and mixed vegetable stew (sambar). It is a popular breakfast dish, often served with coconut chutney. </p>
+      <a href="https://youtu.be/LQPm20CSLSg?si=UCSFP5AEaVorwIj3" class="btn">View Recipe</a>
+    </div>
+  </div>
+
+  <div class="dish-card">
+    <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Instant-Pot-Mumbai-Pav-Bhaji.jpg" alt="Pav Bhaji">
+    <div class="dish-info">
+      <h2>Pav Bhaji</h2>
+      <p>Pav bhaji is a popular Indian fast food and street food dish 
+        that originated in Mumbai, consisting of a spiced, thick mashed 
+        vegetable curry (bhaji) served with a soft, buttered bread roll (pav). </p>
+      <a href="https://youtu.be/gkH2eqFb_YE?si=YIAEJxwfXEpWs4K3" class="btn">View Recipe</a>
+    </div>
+  </div>
+
+</section>
+<br><br>
+<section class="dish-section">
+<div class="heading" id="north"><h1><b>NORTH INDIAN</b></h1></div>
+  <div class="dish-card">
+    <img src="https://cdn.mygingergarlickitchen.com/images_webp/800px/800px-recipes-Punjabi-chole-bhature-anupama-paliwal-my-ginger-garlic-kitchen-1.webp" alt="Chole bhature">
+    <div class="dish-info">
+      <h2>Chole Bhature
+      <p>Chole Bhature is a popular and delicious dish from North India. It is a combination of 
+      spicy, flavorful chickpea curry (chole) and soft, fluffy, deep-fried leavened bread (bhature). 
+      It's a staple in Punjabi cuisine and is often enjoyed as a hearty breakfast, lunch, or snack</p>
+      <a href="https://youtu.be/CcJazpU9seo?si=Z5h3TJLkeekQ2TTS" class="btn">View Recipe</a>
+    </div>
+  </div>
+
+  <div class="dish-card">
+    <img src="https://www.madhuseverydayindian.com/wp-content/uploads/2022/11/veg-biryani.jpg" alt="Biryani">
+    <div class="dish-info">
+      <h2>Biryani</h2>
+      <p>Veg biryani is a flavorful and aromatic Indian mixed-rice dish made with basmati rice, 
+      mixed vegetables, herbs, and spices. It can be prepared in different ways, most commonly 
+      as a quick one-pot meal or a traditional "dum" style with layered ingredients and slow cooking</p>
+      <a href="https://youtu.be/eKVFofyojmQ?si=-bGwqsQ6QGZPejaF" class="btn">View Recipe</a>
+    </div>
+  </div>
+
+  <div class="dish-card">
+    <img src="https://www.ohmyveg.co.uk/wp-content/uploads/2024/10/samosa-chaat-1.jpg" alt="Samosa Chat">
+    <div class="dish-info">
+      <h2>Samosa Chaat</h2>
+      <p>Samosa chaat is a popular Indian street food made of broken crispy samosas topped with 
+      chickpea curry, various chutneys, and fresh garnishes like yogurt, chopped onions, tomatoes,
+      and sev. It offers a balance of spicy, tangy, and sweet flavors and diverse textures in every bite. </p>
+      <a href="https://youtube.com/shorts/zJRJLtPzwmU?si=Y4gsGh9wdRkddeo8" class="btn">View Recipe</a>
+    </div>
+  </div>
+
+  <div class="dish-card">
+    <img src="https://www.whiskaffair.com/wp-content/uploads/2019/05/Dahi-Puri-2-1.jpg" alt="Dahi Puri">
+    <div class="dish-info">
+      <h2>Dahi puri</h2>
+      <p>Dahi puri is a popular Indian street food and a type of chaat that originated in Mumbai.
+      It consists of crispy, puffed mini-puri shells filled with a savory mixture and topped
+      generously with yogurt and various chutneys and spices. </p>
+      <a href="https://youtu.be/ez8TeGLysHQ?si=CjzmAg9WPg-PdkPb" class="btn">View Recipe</a>
+    </div>
+  </div>
+
+</section>
+<footer class="footer">
+
+    <div class="footer-container">
+        <div class="social-links">
+            <ul>
+            <li><img src="facebook.png" class="social-img"></li>
+            <li><img src="instagram.png" class="social-img"></li>
+            <li><img src="twitter.png" class="social-img"></li>
+            <li><img src="pinterest.png" class="social-img"></li>
+            <li><img src="email.png" class="social-img"></li>
+            <li><a href="#top" class="back-to-top"><b>↑ BACK TO TOP</b></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-info">
+            <p>&copy; Created by Anjali Dewari | RasoiGhar | Cook.Taste.Share | All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
