@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RasoiGhar❤️🍴 | Categories</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    background-color: #efad81;
+    font-family: Cambria, serif;
+    text-align: center;
+}
+
+header { 
+  background: #eee6d8; 
+  padding: 15px;  
+  font-family: Cambria;
+}
+
+.heade{
+      background: #eee6d8; 
+      display: flex;                          
+      justify-content: center;       
+      align-items: center;            
+      gap: 350px;                      
+}
+
+.navbar { 
+  display: flex; 
+  background-color:#a84300 ; 
+  color: #eee6d8; 
+  padding: 15px 20px; 
+  justify-content: center;
+  gap: 25px;
+} 
+ 
+.logo { 
+    width: 220px;
+    height: auto;
+    align-items: left;
+}
+
+.current {
+    font-size: 35px;   
+    font-weight: 600; 
+    color: #7B241C;
+    justify-content: center;
+    font-family: Times New Roman;
+}
+
+.actions a { 
+  margin-left: 15px; 
+  color: #7B241C; 
+  text-decoration: none; 
+  font-weight: bold; 
+  text-align: right;
+  font-size: 30px;
+} 
+
+.nav-links { 
+  display: flex; 
+  list-style: none; 
+} 
+ 
+.nav-links li { 
+  margin: 0 15px; 
+} 
+ 
+.nav-links a { 
+  text-decoration: none; 
+  color: #eee6d8;
+  font-size: 28px; 
+} 
+
+.title {
+    font-size: 50px;
+    color: #7B241C;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #593B2B;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    padding: 10px 30px;
+}
+
+.category-card {
+    flex : 1 ;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    transition: transform .3s ease, box-shadow .3s ease;
+    border-top: 6px solid #A84300;
+}
+
+.category-card .image {
+    width: 100%;
+    height: 500px;  
+    object-fit: cover;
+}
+
+.category-card h2 {
+    color: #7B241C;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.category-card a {
+    text-decoration: none;
+    background: #A84300;
+    color: #eee6d8;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.heading {
+    font-size : 25px;
+    color : #7B241C;
+    text-align : center;
+    background-color: #eee6d8;
+    padding : 10px;
+}
+
+.recipe-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #eee6d8;
+}
+
+.recipe-section h1{
+    font-family: Times new roman;
+    font-size: 30px;
+    text-align: center;
+}
+
+.recipe-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    transition: transform .3s ease, box-shadow .3s ease;
+    border-top: 6px solid #A84300;
+    width: 23%;               
+    height: 650px;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 400px;  
+    object-fit: cover;
+}
+
+.text-overlay h2 {
+    font-weight : bold;
+    color : #7B241C;
+}
+
+.text-overlay p{
+    font-size : 17px;
+    text-align: left;
+}
+
+.recipe-card a {
+    text-decoration: none;
+    background: #A84300;
+    color: #eee6d8;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #a84300;
+    color: #eee6d8;
+    padding: 20px 0;
+    font-family: cambria;
+    font-size: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+.social-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.social-links li{
+  color: #eee6d8;
+  text-decoration: none;
+  margin-right: 15px;
+  display: inline-block;
+  padding: 5px 0;
+  list-style: none;
+}
+
+.back-to-top {
+    margin-left: auto;
+    font-weight: bold;
+    color: #eee6d8;
+    font-size: 25px;
+}
+
+/* =================== RESPONSIVE DESIGN =================== */
+
+@media (max-width: 1024px) {
+
+  .heade {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .navbar .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+   .category-card {
+    flex: 1 1 calc(50% - 20px);
+   }
+
+.recipe-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.recipe-card {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.recipe-card img {
+  width: 35%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.text-overlay {
+  width: 65%;
+  padding: 20px;
+  background: #fff8f2;
+  border-radius: 0 10px 10px 0;
+}
+}
+
+/* ---------- Mobile (max-width: 600px) ---------- */
+@media (max-width: 600px) {
+
+  /* Header */
+  .heade {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  .current h1 {
+    font-size: 20px;
+  }
+
+  /* Navbar */
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar .nav-links li a {
+    font-size: 16px;
+  }
+
+   .category-card {
+    flex: 1 1 calc(50% - 20px); 
+   }
+
+  .category-card img {
+    height: 180px;
+    object-fit: cover;
+  }
+
+  /* Recipe Sections */
+  .recipe-section {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
+   
+   .recipe-card {
+    flex-direction: column;
+  }
+
+  .recipe-card img {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .text-overlay {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+  }
+  
+  
+  .footer-container {
+    text-align: center;
+  }
+
+  .social-links ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-info p {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+</style>
+</head>
+<body>
+<header id="top">
+<div class="heade">
+    <div><img src="image.png" class="logo"></div> 
+    <div class="current">
+        <hl>...CATEGORIES🥗🥘🍛...</h1>
+    </div>
+    <div class="actions"> 
+      <a href="login.html"><b>Login  |</b></a>
+      <span style="font-size: 26px; color: #7B241C; font-family: cambria;"><b>🍴❤️MY RECIPES</b></span> 
+    </div>
+</div>
+</header>
+
+<nav class="navbar"> 
+     <ul class="nav-links"> 
+      <li><a href="home.html">Home</a></li> 
+      <li><a href="about.html">About</a></li> 
+      <li><a href="categories.html"><b><u>Categories</b></u></a></li> 
+      <li><a href="upload.html">Upload Own Recipe</a></li> 
+      <li><a href="contact.html">Contact</a></li> 
+    </ul> 
+</nav> 
+
+<h1 class="title">Recipe Categories🥗🍴 </h1>
+<h2 class="subtitle">Find recipes easily by browsing your favorite category</h2>
+<br>
+<div class="categories-container">
+
+    <div class="category-card">
+        <img src="veg.webp" class="image">
+        <h2>Veg Recipes 🥦</h2>
+        <a href="#veg">View Recipes</a>
+    </div>
+
+    <div class="category-card">
+        <img src="snack.webp" class="image">
+        <h2>Snacks & Starters 🍟</h2>
+        <a href="#snack">View Recipes</a>
+    </div>
+
+    <div class="category-card">
+        <img src="sweet.webp" class="image">
+        <h2>Indian Sweets 🍨</h2>
+        <a href="#sweet">View Recipes</a>
+    </div>
+
+</div>
+<br>
+<!-- ---------------------------- VEG RECIPES SECTION ---------------------------- -->
+<div class="heading" id="veg"><h1><b>VEG RECIPE🥦🥗</b></h1></div>
+<section class="recipe-section">
+    <div class="recipe-card">
+        <img src="shahi paneer.png" alt="Recipe">
+          <div class="text-overlay">
+            <h2>Shahi Paneer</h2>
+            <p>Shahi Paneer is a popular North Indian dish made of paneer (Indian cottage cheese) 
+            cooked in a thick, creamy and gravy made of tomatoes, cream, and 
+            cashew-onion-ginger-garlic, served with roti, naan or rice, and is known for 
+            its royal taste and rich texture. </p><br>
+            <a href="https://youtu.be/G3-EASdBTOU?si=-V9TDMjA1rdexk3E">View Recipe</a>
+            </div>
+    </div>
+
+    <div class="recipe-card">
+        <img src="dal makhani.jpg" alt="Recipe">
+        <div class="text-overlay">
+            <h2>Dal Makhani</h2>
+            <p>Dal Makhani is a rich, creamy, slow-cooked North Indian lentil 
+            dish made from whole black lentils (urad dal) and kidney beans (rajma),
+            simmered with butter, cream, and spices for a luxurious, velvety texture, 
+            symbolizing celebration and comfort food. </p><br>
+            <a href="https://youtu.be/mA5XjhdwJHc?si=cL7gmXjloPwxk29p">View Recipe</a>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <img src="chap.jpg" alt="Recipe">
+        <div class="text-overlay">
+            <h2>Makhani Soya Chaap</h2>
+            <p>Makhani soya chaap is a popular, protein-rich vegetarian Indian curry
+            dish where succulent soya chaap pieces are cooked in a rich, creamy, and 
+            mildly spiced tomato-based makhani gravy. It is often
+            considered a vegetarian alternative to butter chicken. </p><br>
+            <a href="https://youtu.be/r6MbnRbEO5U?si=suWudhYNTNqJhesu">View Recipe</a>
+        </div>
+    </div>
+
+      <div class="recipe-card">
+        <img src="malai kofta.jpg" alt="Recipe">
+        <div class="text-overlay">
+            <h2>Malai Kofta</h2>
+            <p>Malai Kofta is a popular, rich, and indulgent North Indian vegetarian 
+            dish consisting of fried dumplings (koftas) made of mashed potatoes and 
+            paneer (cottage cheese) served in a creamy, mildly spiced tomato and cashew-based gravy. </p><br>
+            <a href="https://youtu.be/Q4cSiiYa6_w?si=O4phHqWnpzEGh-Er">View Recipe</a>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <img src="paneer.webp" alt="Recipe">
+        <div class="text-overlay">
+            <h2>Paneer Lababdar</h2>
+            <p>Paneer Lababdar is a popular, rich North Indian dish featuring cubes of
+            cottage cheese (paneer) in a creamy, mildly tangy, and faintly sweet gravy.
+            The dish gets its unique, slightly chunky texture from the addition of grated 
+            paneer to the smooth tomato-onion base gravy. </p><br>
+            <a href="https://youtu.be/1DbrPChGnpk?si=x0Z5m3lvRn3B4n82">View Recipe</a>
+        </div>
+    </div> 
+</section>
+<br>
+
+<!-- ---------------------------- SNACKS SECTION ---------------------------- -->
+<div class="heading" id="snack"><h1><b>SNACK RECIPE🍟🥪</b></h1></div>
+<section class="recipe-section">
+    <div class="recipe-card">
+        <img src="cutlet.jpg" alt="Recipe">
+          <div class="text-overlay">
+            <h2>Veg Cutlet</h2>
+            <p>Veg cutlet is a popular, crispy Indian snack made from a spiced 
+            mixture of mashed vegetables, often potatoes, carrots, and peas, which
+            is shaped into patties, coated in breadcrumbs, and then fried.</p><br>
+            <a href="https://youtu.be/KPDDFlZ7v2w?si=28COj8snza_NZfKl">View Recipe</a>
+            </div>
+    </div>
+
+    <div class="recipe-card">
+        <img src="tikka.jpg" alt="Recipe">
+        <div class="text-overlay">
+            <h2>Paneer Tikka</h2>
+            <p>Dal Makhani is a classic, rich, and creamy North 
+            Indian Punjabi dish made from slow-cooked whole black 
+            lentils and red kidney beans, simmered in a buttery, spiced tomato and onion gravy.</p><br>
+            <a href="https://youtu.be/mA5XjhdwJHc?si=cL7gmXjloPwxk29p">View Recipe</a>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <img src="https://imgmediagumlet.lbb.in/media/2021/03/605ae93c24c90e249ad9b93b_1616570684551.jpg" alt="Recipe">
+        <div class="text-overlay">
+            <h2>Misal Pao</h2>
+            <p>Misal pav is a popular, spicy Maharashtrian street food consisting of
+            a sprouts curry (usal), a thin, spicy gravy (rassa or kat), crunchy toppings 
+            (farsan), chopped onions, and lemon, all served with pav.</p><br>
+            <a href="https://youtu.be/MYZHbLlLP8k?si=envrRUJ20QcuZ11i">View Recipe</a>
+        </div>
+    </div>
+
+      <div class="recipe-card">
+        <img src="https://www.cookclickndevour.com/wp-content/uploads/2016/05/chilli-paneer-recipe-1.jpg" alt="Recipe">
+        <div class="text-overlay">
+            <h2>Chilli Paneer</h2>
+            <p>Chilli Paneer is a popular Indo-Chinese dish featuring crispy fried
+            cubes of paneer (Indian cottage cheese) tossed in a spicy, tangy, and 
+            slightly sweet sauce with bell peppers and onions. </p><br>
+            <a href="https://youtu.be/v973V-9f8MA?si=VnMAqEC6ogiIA04i">View Recipe</a>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <img src="https://kannanskitchen.com/wp-content/uploads/2021/05/IMG_20200927_142549_Bokeh_1.jpg" alt="Recipe">
+        <div class="text-overlay">
+            <h2>Manchurian</h2>
+            <p>Manchurian refers to a popular class of Indo-Chinese dishes, which feature 
+            deep-fried fritters (meat or vegetable balls) tossed in a spicy, sweet, and tangy 
+            soy sauce-based gravy.</p><br>
+            <a href="https://youtu.be/6pB9MktBXps?si=RCpO97ANNJ3Wo2GV">View Recipe</a>
+        </div>
+    </div> 
+</section>
+<br>
+
+<!-- ---------------------------- SWEETS SECTION ---------------------------- -->
+<div class="heading" id="sweet"><h1><b>SWEET RECIPE🍮🍦</b></h1></div>
+<section class="recipe-section">
+    <div class="recipe-card">
+        <img src="https://kitchenflavours.net/wp-content/uploads/2015/06/Rasmalai-480x480.jpg" alt="Recipe">
+          <div class="text-overlay">
+            <h2>Rasmalai</h2>
+            <p>Rasmalai is a popular Indian dessert consisting of soft, spongy cottage 
+            cheese (chenna) dumplings soaked in a sweetened, thickened, and fragrant
+            milk sauce (ras).Rich, creamy ,flavor, and garnished with nuts. </p><br>
+            <a href="https://youtu.be/88OoCeSmkGU?si=jkoDqleg3BOuqCnA">View Recipe</a>
+            </div>
+    </div>
+
+    <div class="recipe-card">
+        <img src="https://img.freepik.com/premium-photo/shrikhand-srikhand-is-indian-dessert-made-strained-yogurt-garnished-with-dry-fruits-saffron_466689-25386.jpg" alt="Recipe">
+        <div class="text-overlay">
+            <h2>Shrikhand</h2>
+            <p>Shrikhand is a rich, creamy, traditional Indian dessert from Gujarat 
+            and Maharashtra, made from hung curd (yogurt strained of whey) mixed with
+            sugar, cardamom, and saffron, often garnished with nuts like pistachios, 
+            and served chilled, famously with puri (fried bread)</p><br>
+            <a href="https://youtube.com/shorts/6bm46fqJlhM?si=fwabSIIAfd0UBVig">View Recipe</a>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <img src="https://m.media-amazon.com/images/I/51Kujt85FFL._AC_UF894,1000_QL80_.jpg" alt="Recipe">
+        <div class="text-overlay">
+            <h2>Sizzling Brownie</h2>
+            <p>A sizzling brownie is a popular dessert, indigenous to India, consisting 
+            of a warm chocolate brownie topped with a scoop of vanilla (or other) ice cream 
+            and a generous pouring of hot chocolate sauce, all served on a preheated sizzler 
+            plate to create a dramatic "sizzling" effect. </p><br>
+            <a href="https://youtu.be/PBdA7jEPMio?si=g8V49TWbzf2rML0E">View Recipe</a>
+        </div>
+    </div>
+
+      <div class="recipe-card">
+        <img src="https://thumbs.dreamstime.com/b/kaju-katli-delicious-fresh-healthy-famous-pakistani-mithai-34186048.jpg?w=768" alt="Recipe">
+        <div class="text-overlay">
+            <h2>Kaju Katli</h2>
+            <p>Kaju katli (or kaju barfi) is a popular Indian dessert consisting of a 
+            smooth, melt-in-your-mouth cashew nut fudge. It is a rich, diamond-shaped 
+            sweet typically made from cashews, sugar, and flavored with cardamom.
+            A traditional kaju katli is often decorated with a layer of edible 
+            silver foil.</p><br>
+            <a href="https://youtu.be/v4ZRuZgFrZA?si=YvWBP3fG_432gAeh">View Recipe</a>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <img src="https://www.whiskaffair.com/wp-content/uploads/2019/05/Gajar-Ka-Halwa-2-1.jpg" alt="Recipe">
+        <div class="text-overlay">
+            <h2>Gajar ka Halwa</h2>
+            <p>Gajar ka halwa, also known as carrot halwa, is a classic, rich, and popular Indian dessert made 
+            from grated carrots, milk, sugar, and ghee (clarified butter), often garnished with nuts and 
+            cardamom. It is a warm, pudding-like sweet dish traditionally prepared during festivals and 
+            special occasions.</p><br>
+            <a href="https://youtu.be/CNJBC-TJJTA?si=Xflo27bVCjIfW9Gg">View Recipe</a>
+        </div>
+    </div> 
+</section>
+<br>
+
+<footer class="footer">
+
+    <div class="footer-container">
+        <div class="social-links">
+            <ul>
+            <li><img src="facebook.png" class="social-img"></li>
+            <li><img src="instagram.png" class="social-img"></li>
+            <li><img src="twitter.png" class="social-img"></li>
+            <li><img src="pinterest.png" class="social-img"></li>
+            <li><img src="email.png" class="social-img"></li>
+            <li><a href="#top" class="back-to-top"><b>↑ BACK TO TOP</b></a></li>
+            </ul>
+        </div>
+<br>
+        <div class="footer-info">
+            <p>&copy; Created by Anjali Dewari | RasoiGhar | Cook.Taste.Share | All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
