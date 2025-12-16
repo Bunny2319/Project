@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RasoiGhar❤️🍴 | Upload own recipe</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #efad81;
+    font-family: cambria;
+}
+
+header { 
+  background: #eee6d8; 
+  padding: 15px;  
+  font-family: Cambria;
+}
+
+.heade{
+      background: #eee6d8; 
+      display: flex;                          
+      justify-content: center;       
+      align-items: center;            
+      gap: 350px;                      
+}
+
+.navbar { 
+  display: flex; 
+  background-color:#a84300 ; 
+  color: #eee6d8; 
+  padding: 15px 20px; 
+  justify-content: center;
+  gap: 25px;
+} 
+ 
+.logo { 
+    width: 220px;
+    height: auto;
+    align-items: left;
+}
+
+.current {
+    font-size: 40px;   
+    font-weight: 600; 
+    color: #7B241C;
+    justify-content: center;
+    font-family: Times New Roman;
+}
+
+.actions a { 
+  margin-left: 15px; 
+  color: #7B241C; 
+  text-decoration: none; 
+  font-weight: bold; 
+  text-align: right;
+  font-size: 30px;
+} 
+
+.nav-links { 
+  display: flex; 
+  list-style: none; 
+} 
+ 
+.nav-links li { 
+  margin: 0 15px; 
+} 
+ 
+.nav-links a { 
+  text-decoration: none; 
+  color: #eee6d8;
+  font-size: 28px; 
+} 
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    width: 50%;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container h1 {
+    color: #7B241C;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #593B2B;
+}
+
+.recipe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.recipe-form label {
+    text-align: left;
+    color: #7B241C;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #c8b99d;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    background-color: #A84300;
+    color: white;
+    padding: 14px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #7B241C;
+}
+
+footer {
+    background-color: #a84300;
+    color: #eee6d8;
+    padding: 20px 0;
+    font-family: cambria;
+    font-size: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+.social-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.social-links li{
+  color: #eee6d8;
+  text-decoration: none;
+  margin-right: 15px;
+  display: inline-block;
+  padding: 5px 0;
+  list-style: none;
+}
+
+.back-to-top {
+    margin-left: auto;
+    font-weight: bold;
+    color: #eee6d8;
+    font-size: 25px;
+}
+
+@media (max-width: 1024px) {
+    
+    .heade {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .current h1 {
+        font-size: 1.3rem;
+    }
+
+    .actions {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 5px 10px;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .heade {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .current h1 {
+        font-size: 1.1rem;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .recipe-form button {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .footer-container ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+<header id="top">
+    <div class="heade">
+    <div><img src="image.png" class="logo"></div> 
+    <div class="current">
+        <hl>... UPLOAD OWN RECIPE🥘...</h1>
+    </div>
+    <div class="actions"> 
+      <a href="login.html"><b>Login  |</b></a>
+      <span style="font-size: 26px; color: #7B241C; font-family: cambria;"><b>🍴❤️MY RECIPES</b></span> 
+    </div>
+</div></header>
+
+<nav class="navbar"> 
+     <ul class="nav-links"> 
+      <li><a href="home.html">Home</a></li> 
+      <li><a href="about.html">About</a></li> 
+      <li><a href="categories.html">Categories</a></li> 
+      <li><a href="upload.html"><u><b>Upload Own Recipe</b></u></a></li> 
+      <li><a href="contact.html">Contact</a></li> 
+    </ul> 
+</nav> 
+<br>
+<div class="container">
+    <h1>Upload Your Recipe🫕🍴🍲</h1>
+    <p class="tagline">Share your delicious creation with the world!</p>
+
+    <form class="recipe-form">
+        <label>Recipe Name</label>
+        <input type="text" placeholder="Enter recipe name" required>
+
+        <label>Ingredients</label>
+        <textarea rows="4" placeholder="List ingredients (one per line)" required></textarea>
+
+        <label>Instructions / Steps</label>
+        <textarea rows="6" placeholder="Write cooking steps in order" required></textarea>
+
+        <label>Upload Recipe Image</label>
+        <input type="file" accept="image/*">
+
+        <label>Video Link</label>
+        <input type="url" placeholder="Paste YouTube / Website video link">
+
+        <button type="submit">Submit Recipe</button>
+</div>
+<br>
+<footer class="footer">
+
+    <div class="footer-container">
+        <div class="social-links">
+            <ul>
+            <li><img src="facebook.png" class="social-img"></li>
+            <li><img src="instagram.png" class="social-img"></li>
+            <li><img src="twitter.png" class="social-img"></li>
+            <li><img src="pinterest.png" class="social-img"></li>
+            <li><img src="email.png" class="social-img"></li>
+            <li><a href="#top" class="back-to-top"><b>↑ BACK TO TOP</b></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-info">
+            <p>&copy; Created by Anjali Dewari | RasoiGhar | Cook.Taste.Share | All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
